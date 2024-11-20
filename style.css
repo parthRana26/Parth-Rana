@@ -1,0 +1,258 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header / Navigation Styles */
+/* Styling for the navbar */
+nav {
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1B1F3B; /* Navy Blue */
+    padding: 15px 30px;
+    font-family: Arial, sans-serif;
+    position: sticky; /* Sticky position */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Styling for the logo and name section */
+.logo-img {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img h2 {
+    color: #E5E5E5; /* Light Gray */
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Styling for the navigation links */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E5E5E5; /* Light Gray */
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+nav ul li a:hover {
+    color: #00B4D8; /* Cyan Accent Color */
+}
+
+/* Responsive Design for Mobile View */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+
+/* Main Section Styles */
+main {
+    padding: 60px 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* About Section */
+.about {
+    margin-bottom: 40px;
+}
+
+/* Skills Section */
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills ul li {
+    width: 45%;
+}
+
+.skills h3 {
+    margin-top: 20px;
+}
+
+/* Projects Section */
+.project {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.project p {
+    margin-bottom: 15px;
+}
+
+.project ul {
+    margin-left: 20px;
+}
+
+.project a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Resume Section */
+.resume ul {
+    margin-left: 20px;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1B1F3B;
+    color: white;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #d7d7d7;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .skills ul li {
+        width: 100%;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    .logo-img h2 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    #contact form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        font-size: 14px;
+    }
+
+    #contact input, #contact textarea {
+        font-size: 14px;
+    }
+
+    #contact button {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
